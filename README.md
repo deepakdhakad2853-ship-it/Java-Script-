@@ -39,3 +39,9 @@ Primitive value नहीं बदल सकते
  
  deep copy =>  array me kahii par change krne par same refernce point me  change nhii hota hai 
 
+
+<!-- IIFE -->
+
+what is IIFE 
+ Immediately Invoked Function Expressions (IIFE)
+ yeh globle variable ke palution ko rokta hai aur immediately invoked ho jata hai jese hi website run krte hai tb 
