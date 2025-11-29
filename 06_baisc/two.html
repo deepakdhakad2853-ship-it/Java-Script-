@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | github</title>
+</head>
+<body style="background-color: black; color: aliceblue; ">
+    <div class="perent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day"> Wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+</body>
+<script>
+     const myperent = document.querySelector(".perent");
+    // console.log(myperent);
+    // console.log(myperent.children[1].innerHTML);
+
+    for (let index = 0; index < myperent.children.length; index++) {
+        const element = myperent.children[index].innerHTML;
+        // console.log(element);
+        
+    }
+    
+    // myperent.children[1].style.color = "blue";
+    // console.log(myperent.firstElementChild);
+    // console.log(myperent.lastElementChild);
+
+     const day = document.querySelector(".day")
+    console.log(day);
+    console.log(
+
+        day.parentElement
+    );
+    console.log(day.nextElementSibling);
+    console.log (myperent.childNodes);
+     
+
+</script>
+
+</html>
