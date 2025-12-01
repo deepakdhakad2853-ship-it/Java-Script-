@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Four GitHub</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="langname">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function  addlangname(name){
+        const li =  document.createElement("li")
+        // li.innerHTML = `${name}`
+        li.append(document.createTextNode(name))
+        document.querySelector(".langname").appendChild(li)
+
+    }
+    addlangname("phyton")
+    addlangname("typescript")
+    addlangname("mojo")
+
+    // edit
+
+    const firstchildname =  document.querySelector("li:first-child")
+    // console.log(firstchildname);
+    // firstchildname.innerHTML = "deepak"
+    const newli =  document.createElement("li");
+    newli.textContent = "rohit";
+    firstchildname.replaceWith(newli)
+
+    // eidt 
+   const thirdli =  document.querySelector("li:nth-child(2)");
+   thirdli.outerHTML = "<li>mohit</li>"
+
+//    remove 
+const newliremove = document.querySelector("li:first-child");
+newliremove.remove()
+    
+</script>
+</html>
