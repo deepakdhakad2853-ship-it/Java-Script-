@@ -5,15 +5,18 @@
 body{
     background-color: black;
     color: white;
+    display: flex;
+       justify-content: center;
+        align-items: center;
+        height: 100vh;
 }
-.center{
-    align-items: center;
-    justify-content: center;
+div,span{
+    text-align: center;
 }
-
 .clock{
 background-color: orange;
-width: 50px;
-
-
+padding: 20px 50px;
+margin: 10px;
+border-radius: 5px;
+font-size: 27px;
 }
