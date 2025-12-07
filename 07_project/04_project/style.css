@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    margin-top: 70px;
+}
+.waper h3,p{
+    margin: 10px;
+}
+.waper h3{
+    background-color: black;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+#guess{
+    font-size: 25px;
+}
+input{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+}
