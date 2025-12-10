@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Deepak</h1>
+    <button class="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval(function(){
+    //     console.log("deepak" ,Date.now());
+        
+    // },2000)
+
+    let interval = null
+    const name = function(){
+        console.log("deepak Dhakad")
+        // document.querySelector('h1').innerHTML = "Deepak Dhakad"
+    }
+
+    //  const ChangeMe = setInterval(name , 2000);
+
+    // clearInterval(ChangeMe)
+
+    document.getElementById("stop").addEventListener("click" , function(){
+        clearInterval(ChangeMe);
+        interval = null
+        console.log("STOPPED");
+    })
+    document.querySelector(".start").addEventListener("click", function(){
+                if (!interval) {  // agar interval already start nahi hai tabhi start hoga
+             ChangeMe = setInterval(name , 2000);
+                    console.log("STARTED");
+        }
+
+    })
+</script>
+</html>
